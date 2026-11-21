@@ -175,7 +175,7 @@ export function LeadForm() {
         className="button button-primary form-submit"
         type="submit"
       >
-        Continue to WhatsApp
+        Buy now
         <span aria-hidden="true">↗</span>
       </button>
       <div className="form-feedback" aria-live="polite" role="status">

@@ -46,7 +46,7 @@ export default function TermsPage() {
 
         <h2>Placing and confirming an order</h2>
         <p>
-          Choosing Continue to WhatsApp opens a message with your selected
+          Submitting the form opens a WhatsApp message with your selected
           package and contact and delivery details for you to review. The request
           is sent only if you tap Send in WhatsApp. It is not an order
           confirmation. Our team will confirm package availability, delivery
