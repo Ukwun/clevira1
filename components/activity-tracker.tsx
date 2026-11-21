@@ -140,11 +140,23 @@ export function ActivityTracker() {
       const target = event.target;
       if (!(target instanceof Element)) return;
       const eventName = target.closest<HTMLElement>("[data-track]")?.dataset.track;
+      if (eventName !== "order_whatsapp_handoff" && isAnalyticsEvent(eventName)) {
+        void send(eventName);
+      }
+    };
+    const onSubmit = (event: Event) => {
+      const target = event.target;
+      if (!(target instanceof HTMLFormElement)) return;
+      const eventName = target.dataset.track;
       if (isAnalyticsEvent(eventName)) void send(eventName);
     };
 
     document.addEventListener("click", onClick);
-    return () => document.removeEventListener("click", onClick);
+    document.addEventListener("submit", onSubmit);
+    return () => {
+      document.removeEventListener("click", onClick);
+      document.removeEventListener("submit", onSubmit);
+    };
   }, [consent]);
 
   async function saveConsent(choice: Exclude<ConsentChoice, "undecided">) {
@@ -223,12 +235,13 @@ export function ActivityTracker() {
               </button>
             )}
           </div>
-          <h2 id="privacy-consent-title">Optional, anonymous activity analytics</h2>
+          <h2 id="privacy-consent-title">Optional, pseudonymous activity analytics</h2>
           <p id="privacy-consent-description">
-            If you allow it, we store a random browser ID and share page views and
-            selected button clicks with our analytics service. We do not track
-            symptom details. This choice is separate from WhatsApp updates, can
-            be changed at any time, and expires after 180 days.
+            If you allow it, we save a random browser ID and share homepage views
+            and selected button clicks with our analytics service. We do not
+            track symptom details. This choice is separate from any WhatsApp
+            conversation you start with us, can be changed at any time, and
+            expires after 180 days.
           </p>
           <a className="privacy-consent-policy" href="#privacy">
             Review our privacy information

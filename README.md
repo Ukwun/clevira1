@@ -1,6 +1,6 @@
-# Clevira pre-launch landing page
+# Clevira website
 
-A responsive Next.js App Router landing page for Clevira Herbal Capsules by Trendora Global Ltd. Product details that have not been verified are clearly marked as awaiting documentation. The page makes no therapeutic, ingredient, dosage or regulatory claims.
+A responsive Next.js App Router website for Clevira Herbal Capsules by Trendora Global Ltd. Visitors can review package details and continue to WhatsApp to send an order request. The website does not process payments or keep an order database.
 
 ## Requirements
 
@@ -17,32 +17,21 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Product-information requests
+## Orders and support
 
-The form accepts an email address, a requested quantity (1–99), and explicit consent. It is an information request only; it does not take payment. Configure a confirmed unit price in Nigerian naira and a Resend account with a verified sender:
+The order form opens a prefilled WhatsApp message with the selected package and contact and delivery details. The customer reviews the message and chooses whether to send it. An order is not submitted or confirmed until the customer sends the message and the Clevira team confirms it. The website does not take payment or store order details. Set `NEXT_PUBLIC_WHATSAPP_NUMBER` to the support number in international format; the provided default is the Clevira contact number.
 
-```env
-CLEVIRA_UNIT_PRICE_NGN=
-RESEND_API_KEY=
-LEADS_NOTIFICATION_EMAIL=
-LEADS_FROM_EMAIL=
-```
+Never put private credentials in `NEXT_PUBLIC_*` variables. Optional consent-based analytics require a configured `ACTIVITY_WEBHOOK_URL` and `ACTIVITY_WEBHOOK_SECRET`.
 
-Set `LEADS_NOTIFICATION_EMAIL` to the inbox that should receive requests and `LEADS_FROM_EMAIL` to a sender address verified by Resend. The API reports success only after Resend accepts the email. Do not configure an unverified or estimated product price.
+## Netlify deployment
 
-Set a public WhatsApp contact number in international format without punctuation (country code included):
+The repository includes a Netlify build command and Node.js version. Connect `Ukwun/clevira1` to a Netlify site and select `main` as the production branch; Netlify will build and deploy each push automatically. WhatsApp order requests use the public number configured in `NEXT_PUBLIC_WHATSAPP_NUMBER`; no email or payment credentials are required for this handoff. Configure both `ACTIVITY_WEBHOOK_URL` and `ACTIVITY_WEBHOOK_SECRET` in Netlify only if you enable the optional consent-based analytics service, then trigger a fresh deploy.
 
-```env
-NEXT_PUBLIC_WHATSAPP_NUMBER=234XXXXXXXXXX
-```
+## Operating requirements
 
-When this is blank, WhatsApp opens with a prepared message and lets the visitor select a contact. Do not put secret values in `NEXT_PUBLIC_*` variables.
-
-## Before launch
-
-- Replace the privacy and terms placeholders with approved company notices and contact details.
-- Verify and publish ingredients, directions, pack details, manufacturer and regulatory information against official documents.
-- Confirm the product price; configure and test Resend delivery and the WhatsApp contact.
+- Review and approve the published privacy notice and order terms.
+- Verify ingredients, directions, pack details, manufacturer and regulatory information against official documents.
+- Verify that the Clevira WhatsApp account is monitored and that staff can confirm orders and arrange delivery and payment.
 - Add approved social sharing artwork and real product photography when available.
 
 No product benefits, health outcomes, customer testimonials, or endorsements should be added without suitable substantiation and authorization.

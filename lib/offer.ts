@@ -1,17 +1,40 @@
-export const MAX_REQUESTED_QUANTITY = 99;
+export const PRODUCT_OFFERS = [
+  {
+    id: "one-bottle",
+    label: "1 bottle",
+    paidBottles: 1,
+    freeBottles: 0,
+    priceNgn: 21_500,
+  },
+  {
+    id: "two-bottles",
+    label: "2 bottles",
+    paidBottles: 2,
+    freeBottles: 0,
+    priceNgn: 35_000,
+  },
+  {
+    id: "three-plus-one",
+    label: "3 bottles + 1 free",
+    paidBottles: 3,
+    freeBottles: 1,
+    priceNgn: 48_000,
+  },
+  {
+    id: "six-plus-two",
+    label: "6 bottles + 2 free",
+    paidBottles: 6,
+    freeBottles: 2,
+    priceNgn: 95_000,
+  },
+] as const;
 
-export function getUnitPriceNgn(): number | null {
-  const value = process.env.CLEVIRA_UNIT_PRICE_NGN?.trim();
-  if (!value) return null;
-  if (!/^[1-9]\d*$/.test(value)) {
-    throw new Error("CLEVIRA_UNIT_PRICE_NGN must be a positive whole number of naira.");
-  }
+export type ProductOffer = (typeof PRODUCT_OFFERS)[number];
+export type ProductOfferId = ProductOffer["id"];
 
-  const price = Number(value);
-  if (!Number.isSafeInteger(price) || price > Math.floor(Number.MAX_SAFE_INTEGER / MAX_REQUESTED_QUANTITY)) {
-    throw new Error("CLEVIRA_UNIT_PRICE_NGN is outside the supported price range.");
-  }
-  return price;
+export function getProductOffer(value: unknown): ProductOffer | null {
+  if (typeof value !== "string") return null;
+  return PRODUCT_OFFERS.find((offer) => offer.id === value) ?? null;
 }
 
 export function formatNaira(amount: number): string {
