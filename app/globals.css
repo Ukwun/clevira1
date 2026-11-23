@@ -176,6 +176,32 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .testimonial-card figcaption span { color: #b6e63f; font-size: 9px; letter-spacing: .12em; }
 .testimonial-card figcaption strong { font-family: var(--serif); font-size: 20px; font-weight: 400; }
 
+.transparency-section { padding: 104px 0 110px; background: #fff; }
+.transparency-heading { display: grid; grid-template-columns: 1.05fr .95fr; gap: 80px; align-items: end; }
+.transparency-heading h2 { margin: 17px 0 0; color: var(--forest-deep); font-family: var(--serif); font-size: clamp(40px, 4.7vw, 60px); font-weight: 400; letter-spacing: -.05em; line-height: 1.06; }
+.transparency-heading h2 em { color: #52705c; }
+.transparency-heading > p { max-width: 430px; margin: 0 0 7px auto; color: #707b73; font-size: 12px; line-height: 1.9; }
+.transparency-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 80px; margin-top: 58px; padding-top: 30px; border-top: 1px solid var(--line); }
+.transparency-overview { max-width: 320px; }
+.transparency-icon { width: 44px; height: 44px; display: grid; place-items: center; color: #698a70; background: #edf4ed; border-radius: 50%; }
+.transparency-overview h3 { margin: 19px 0 0; color: var(--forest); font-family: var(--serif); font-size: 28px; font-weight: 400; line-height: 1.05; }
+.transparency-overview h3 em { color: #52705c; }
+.transparency-overview > p { margin: 17px 0 0; color: #768179; font-size: 11px; line-height: 1.85; }
+.verification-status { display: flex; align-items: flex-start; gap: 9px; margin-top: 24px; padding: 13px; background: #f4f7f3; color: #6e7c72; font-size: 9px; line-height: 1.6; }
+.verification-status svg { flex: 0 0 auto; color: #698a70; }
+.verification-status strong { display: block; color: var(--forest); font-weight: 600; }
+.transparency-details { border-top: 1px solid #e5ebe5; }
+.transparency-detail-row { min-height: 67px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 20px; align-items: center; border-bottom: 1px solid #e5ebe5; }
+.transparency-detail-label { color: #536259; font-size: 10px; font-weight: 600; }
+.transparency-pending { display: inline-flex; align-items: center; gap: 8px; color: #8a958d; font-size: 10px; line-height: 1.6; }
+.transparency-pending:before { content: ""; width: 6px; height: 6px; flex: 0 0 auto; border-radius: 50%; background: #b6c2b8; }
+.regimen-strip { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; gap: 18px; align-items: center; margin-top: 38px; padding: 22px 24px; background: var(--forest); color: #eaf2eb; }
+.regimen-step { display: flex; align-items: flex-start; gap: 10px; }
+.regimen-step svg { flex: 0 0 auto; color: #b6e63f; }
+.regimen-step span { color: #d0ddd2; font-size: 10px; line-height: 1.6; }
+.regimen-step strong { display: block; margin-bottom: 2px; color: #fff; font-size: 8px; letter-spacing: .1em; }
+.regimen-arrow { color: #819e87; }
+
 .intro-section { position: relative; isolation: isolate; overflow: hidden; padding: 103px 0 106px; background: var(--forest-deep); }
 .intro-media-background { position: absolute; z-index: 0; inset: 0; overflow: hidden; }
 .intro-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; background-position: center 42%; background-repeat: no-repeat; background-size: cover; opacity: 0; animation: intro-backdrop-transition 28s linear infinite; }
@@ -434,6 +460,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .testimonials-heading > p { margin: 0; }
   .testimonial-stack { gap: 18px; margin-top: 34px; }
   .testimonial-card { min-height: 540px; }
+  .transparency-section { padding: 70px 0; }
+  .transparency-heading { grid-template-columns: 1fr; gap: 18px; }
+  .transparency-heading > p { margin: 0; }
+  .transparency-grid { grid-template-columns: 1fr; gap: 34px; margin-top: 34px; }
+  .transparency-overview { max-width: 520px; }
+  .transparency-detail-row { grid-template-columns: 1fr; gap: 7px; padding: 15px 0; }
+  .regimen-strip { grid-template-columns: 1fr; gap: 18px; margin-top: 28px; padding: 20px 17px; }
+  .regimen-arrow { display: none; }
   .intro-grid { grid-template-columns: 1fr; gap: 25px; }
   .intro-overline { min-height: unset; flex-direction: row; align-items: center; }
   .intro-icon { width: 37px; height: 37px; }

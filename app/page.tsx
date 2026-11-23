@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, Check, CircleHelp, Leaf, MessageCircle, ShieldCheck, Sprout, Truck } from "lucide-react";
+import { ArrowDown, ArrowRight, CalendarDays, Check, CircleHelp, FileCheck2, FlaskConical, Leaf, MessageCircle, ShieldCheck, Sprout, Truck } from "lucide-react";
 import Image from "next/image";
 import { LeadForm } from "@/components/lead-form";
 import { SiteHeader } from "@/components/site-header";
@@ -76,6 +76,16 @@ export default function Home() {
             <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-omolara.jpg" alt="WhatsApp conversation from a customer named Omolara about her Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /><figcaption><span>03</span><strong>Omolara&apos;s experience</strong></figcaption></figure></ScrollReveal>
             <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-tobi.jpg" alt="WhatsApp conversation from a customer named Tobi about his Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /><figcaption><span>04</span><strong>Tobi&apos;s experience</strong></figcaption></figure></ScrollReveal>
           </div>
+        </div>
+      </section>
+      <section className="transparency-section" id="ingredients">
+        <div className="section-shell">
+          <div className="transparency-heading"><div><p className="eyebrow"><span /> 04 / HOW CLEVIRA WORKS</p><h2>Confidence starts<br /><em>with what&apos;s inside.</em></h2></div><p>Skepticism is reasonable when a product asks for your trust. That&apos;s why the ingredient list, directions, and regulatory information belong in the open—not hidden behind a promise.</p></div>
+          <div className="transparency-grid">
+            <div className="transparency-overview"><div className="transparency-icon"><FlaskConical size={23} aria-hidden="true" /></div><h3>One bottle.<br /><em>30 capsules.</em></h3><p>The pack count is shown here. The exact formula and approved use information will be published only after they are checked against the official product documentation.</p><div className="verification-status"><FileCheck2 size={16} aria-hidden="true" /><span><strong>Verification status</strong>Ingredient and regulatory documents required</span></div></div>
+            <div className="transparency-details"><div className="transparency-detail-row"><span className="transparency-detail-label">Ingredients &amp; extracts</span><span className="transparency-pending">Awaiting verified product documentation</span></div><div className="transparency-detail-row"><span className="transparency-detail-label">Traditional uses</span><span className="transparency-pending">Will be described only for confirmed ingredients</span></div><div className="transparency-detail-row"><span className="transparency-detail-label">Daily regimen</span><span className="transparency-pending">Follow the approved label directions once published</span></div><div className="transparency-detail-row"><span className="transparency-detail-label">NAFDAC status</span><span className="transparency-pending">Registration number and certificate to be verified</span></div></div>
+          </div>
+          <div className="regimen-strip"><div className="regimen-step"><CalendarDays size={20} aria-hidden="true" /><span><strong>01 / Check</strong>Read the full label and ingredient list.</span></div><ArrowRight className="regimen-arrow" size={18} aria-hidden="true" /><div className="regimen-step"><ShieldCheck size={20} aria-hidden="true" /><span><strong>02 / Confirm</strong>Ask a qualified professional if it fits your situation.</span></div><ArrowRight className="regimen-arrow" size={18} aria-hidden="true" /><div className="regimen-step"><Check size={20} aria-hidden="true" /><span><strong>03 / Stay consistent</strong>Use only as directed on verified packaging.</span></div></div>
         </div>
       </section>
       <section className="intro-section" id="about">
