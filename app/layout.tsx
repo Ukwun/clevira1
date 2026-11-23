@@ -3,12 +3,12 @@ import "./globals.css";
 import { ActivityTracker } from "@/components/activity-tracker";
 
 export const metadata: Metadata = {
-  title: "Clevira | Clearer health information",
+  title: "Clevira | Clearer information when infection symptoms worry you",
   description:
-    "Find clear, responsible information about health concerns and Clevira Herbal Capsules. Product details and claims remain subject to official verification.",
+    "Clear, responsible information for people worried about infection symptoms. Product details and claims remain subject to official verification.",
   applicationName: "Clevira",
   openGraph: {
-    title: "Clevira | Clearer health information",
+    title: "Clevira | Clearer information when infection symptoms worry you",
     description:
       "Understand what information to check and where to find responsible next steps. Clevira product claims remain subject to official verification.",
     siteName: "Clevira",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Clevira | Clearer health information",
+    title: "Clevira | Clearer information when infection symptoms worry you",
     description:
       "Explore responsible health information from Trendora Global Ltd. Clevira product claims remain subject to official verification.",
   },
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         {process.env.ACTIVITY_WEBHOOK_URL && <ActivityTracker />}
         {children}

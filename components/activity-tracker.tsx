@@ -243,7 +243,7 @@ export function ActivityTracker() {
             conversation you start with us, can be changed at any time, and
             expires after 180 days.
           </p>
-          <a className="privacy-consent-policy" href="#privacy">
+          <a className="privacy-consent-policy" href="/privacy">
             Review our privacy information
           </a>
           {errorMessage && (
