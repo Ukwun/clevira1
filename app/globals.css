@@ -132,6 +132,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .symptom-cycle-heading h2 { margin: 17px 0 0; color: var(--forest-deep); font-family: var(--serif); font-size: clamp(40px, 4.7vw, 60px); font-weight: 400; letter-spacing: -.05em; line-height: 1.06; }
 .symptom-cycle-heading h2 em { color: #52705c; }
 .symptom-cycle-heading > p { max-width: 390px; margin: 0 0 7px auto; color: #707b73; font-size: 12px; line-height: 1.9; }
+.symptom-feature-media { position: relative; min-height: 330px; margin: 52px 0 0; overflow: hidden; background: #e6ece4; }
+.symptom-feature-image { object-fit: cover; object-position: center 42%; }
+.symptom-feature-media:after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, rgba(16,46,38,.62), transparent 44%); }
+.symptom-feature-media figcaption { position: absolute; z-index: 1; right: 25px; bottom: 21px; left: 25px; max-width: 410px; color: #fff; font-size: 11px; line-height: 1.7; }
 .symptom-card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 57px; }
 .symptom-card { position: relative; min-height: 245px; padding: 24px 20px 20px; border: 1px solid #e2e9e2; background: #f6f8f5; transition: transform .25s ease, background .25s ease, box-shadow .25s ease; }
 .symptom-card:hover { transform: translateY(-5px); background: #edf4ed; box-shadow: 0 14px 28px rgba(23,61,50,.08); }
@@ -389,6 +393,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .symptom-cycle-section { padding: 70px 0; }
   .symptom-cycle-heading { grid-template-columns: 1fr; gap: 18px; }
   .symptom-cycle-heading > p { margin: 0; }
+  .symptom-feature-media { min-height: 300px; margin-top: 34px; }
+  .symptom-feature-media figcaption { right: 16px; bottom: 15px; left: 16px; font-size: 10px; }
   .symptom-card-grid { grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 34px; }
   .symptom-card { min-height: 220px; padding: 18px 15px; }
   .symptom-card h3 { font-size: 18px; }

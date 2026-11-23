@@ -53,6 +53,10 @@ export default function Home() {
             <div><p className="eyebrow"><span /> 02 / SYMPTOM &amp; CYCLE RECOGNITION</p><h2>Are you experiencing any of these<br /><em>symptoms or side effects?</em></h2></div>
             <p>It&apos;s not only the symptom. It&apos;s the interruptions, the worry, and the exhausting effort of trying one temporary fix after another while life keeps moving around you.</p>
           </div>
+          <figure className="symptom-feature-media">
+            <Image src="/images/symptom-itching-irritation.jpg" alt="Guide to intimate health and private-part itching and discomfort" fill sizes="(max-width: 720px) 100vw, 1192px" className="symptom-feature-image" />
+            <figcaption>Itching and irritation can be difficult to talk about. Understanding the signals is a useful first step.</figcaption>
+          </figure>
           <div className="symptom-card-grid">
             <article className="symptom-card"><span className="symptom-card-number">01</span><Activity size={23} aria-hidden="true" /><h3>Persistent itching</h3><p>The kind of discomfort that makes it hard to focus, sleep, sit still, or feel present in your own day.</p></article>
             <article className="symptom-card"><span className="symptom-card-number">02</span><RefreshCcw size={23} aria-hidden="true" /><h3>Recurring irritation</h3><p>Just when you think it has passed, the irritation returns and you start questioning what triggered it this time.</p></article>
