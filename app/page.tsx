@@ -52,7 +52,7 @@ export default function Home() {
         <div className="section-shell">
           <div className="symptom-cycle-heading">
             <div><p className="eyebrow"><span /> 02 / SYMPTOM &amp; CYCLE RECOGNITION</p><h2>Are you experiencing any of these<br /><em>symptoms or side effects?</em></h2></div>
-            <p>It&apos;s not only the symptom. It&apos;s the interruptions, the worry, and the exhausting effort of trying one temporary fix after another while life keeps moving around you.</p>
+            <p>It&apos;s not only the symptom. It&apos;s the interruptions, the worry, and the exhausting effort of trying one temporary fix after another while life keeps moving around you. These signs can have different causes, so noticing patterns is a reason to seek clear medical guidance.</p>
           </div>
           <figure className="symptom-feature-media">
             <Image src="/images/symptom-itching-irritation.jpg" alt="Guide to intimate health and private-part itching and discomfort" fill sizes="(max-width: 720px) 100vw, 1192px" className="symptom-feature-image" />
@@ -61,6 +61,8 @@ export default function Home() {
           <div className="symptom-image-grid">
             <ScrollReveal><figure className="symptom-image-card"><Image src="/images/symptom-discharge.jpg" alt="Illustrated guide showing unusual discharge symptoms" fill sizes="(max-width: 720px) 100vw, 1192px" className="symptom-card-image" /><figcaption><strong>Unusual discharge?</strong><span>Changes in color or texture, unusual odor, discomfort, or recurring shifts are worth paying attention to.</span></figcaption></figure></ScrollReveal>
             <ScrollReveal><figure className="symptom-image-card"><Image src="/images/symptom-pelvic-ache.jpg" alt="Illustrated guide showing recurring lower pelvic ache" fill sizes="(max-width: 720px) 100vw, 1192px" className="symptom-card-image" /><figcaption><strong>Why does that ache keep coming back?</strong><span>Lower abdominal ache, pelvic pressure, discomfort during daily routines, and recurring flare-ups deserve clarity.</span></figcaption></figure></ScrollReveal>
+            <ScrollReveal><figure className="symptom-image-card"><Image src="/images/symptom-conception-cycle.jpg" alt="Illustrated guide about difficulty conceiving, cycle changes, and underlying discomfort" fill sizes="(max-width: 720px) 100vw, 1192px" className="symptom-card-image" /><figcaption><strong>Waiting and wondering?</strong><span>Difficulty conceiving, shifting cycles, underlying discomfort, and emotional strain deserve compassionate, qualified support.</span></figcaption></figure></ScrollReveal>
+            <ScrollReveal><figure className="symptom-image-card"><Image src="/images/symptom-urine-changes.jpg" alt="Illustrated guide about changes in urine appearance and urinary urgency" fill sizes="(max-width: 720px) 100vw, 1192px" className="symptom-card-image" /><figcaption><strong>When urine looks different</strong><span>Cloudiness, unusual color, smell changes, frequent urination, or sudden urgency are signals worth checking.</span></figcaption></figure></ScrollReveal>
           </div>
           <div className="cycle-strip"><div className="cycle-label"><span>THE CYCLE</span><strong>Temporary relief<br />isn&apos;t the same as clarity.</strong></div><div className="cycle-steps"><span>Discomfort</span><i aria-hidden="true">→</i><span>Quick fix</span><i aria-hidden="true">→</i><span>Short relief</span><i aria-hidden="true">→</i><span>Flare-up again</span><i aria-hidden="true">↺</i></div></div>
         </div>
