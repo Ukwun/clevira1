@@ -137,6 +137,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .symptom-feature-media:after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, rgba(16,46,38,.62), transparent 44%); }
 .symptom-feature-media figcaption { position: absolute; z-index: 1; right: 25px; bottom: 21px; left: 25px; max-width: 410px; color: #fff; font-size: 11px; line-height: 1.7; }
 .symptom-card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 57px; }
+.symptom-image-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 52px; }
+.symptom-image-card { position: relative; min-height: 440px; margin: 0; overflow: hidden; background: #e6ece4; }
+.symptom-card-image { object-fit: cover; object-position: center; transition: transform .5s ease; }
+.symptom-image-card:hover .symptom-card-image { transform: scale(1.025); }
+.symptom-image-card:after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, rgba(8,30,22,.86), rgba(8,30,22,0) 54%); }
+.symptom-image-card figcaption { position: absolute; z-index: 1; right: 24px; bottom: 22px; left: 24px; display: grid; gap: 8px; color: #fff; }
+.symptom-image-card figcaption strong { font-family: var(--serif); font-size: 24px; font-weight: 400; line-height: 1.15; }
+.symptom-image-card figcaption span { max-width: 470px; color: #d9e8dc; font-size: 10px; line-height: 1.7; }
 .symptom-card { position: relative; min-height: 245px; padding: 24px 20px 20px; border: 1px solid #e2e9e2; background: #f6f8f5; transition: transform .25s ease, background .25s ease, box-shadow .25s ease; }
 .symptom-card:hover { transform: translateY(-5px); background: #edf4ed; box-shadow: 0 14px 28px rgba(23,61,50,.08); }
 .symptom-card-number { position: absolute; top: 19px; right: 18px; color: #9cac9e; font-size: 9px; letter-spacing: .1em; }
@@ -395,9 +403,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .symptom-cycle-heading > p { margin: 0; }
   .symptom-feature-media { min-height: 300px; margin-top: 34px; }
   .symptom-feature-media figcaption { right: 16px; bottom: 15px; left: 16px; font-size: 10px; }
-  .symptom-card-grid { grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 34px; }
-  .symptom-card { min-height: 220px; padding: 18px 15px; }
-  .symptom-card h3 { font-size: 18px; }
+  .symptom-image-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 34px; }
+  .symptom-image-card { min-height: 420px; }
+  .symptom-image-card figcaption { right: 17px; bottom: 17px; left: 17px; }
+  .symptom-image-card figcaption strong { font-size: 22px; }
   .cycle-strip { grid-template-columns: 1fr; gap: 22px; margin-top: 24px; padding: 20px 16px; }
   .cycle-label { align-items: flex-start; flex-direction: column; gap: 12px; }
   .cycle-label strong { padding: 0; border: 0; font-size: 17px; }
