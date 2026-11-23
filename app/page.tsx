@@ -50,7 +50,7 @@ export default function Home() {
       <section className="symptom-cycle-section" id="symptoms">
         <div className="section-shell">
           <div className="symptom-cycle-heading">
-            <div><p className="eyebrow"><span /> 02 / SYMPTOM &amp; CYCLE RECOGNITION</p><h2>We understand the part<br /><em>people don&apos;t always see.</em></h2></div>
+            <div><p className="eyebrow"><span /> 02 / SYMPTOM &amp; CYCLE RECOGNITION</p><h2>Are you experiencing any of these<br /><em>symptoms or side effects?</em></h2></div>
             <p>It&apos;s not only the symptom. It&apos;s the interruptions, the worry, and the exhausting effort of trying one temporary fix after another while life keeps moving around you.</p>
           </div>
           <div className="symptom-card-grid">
