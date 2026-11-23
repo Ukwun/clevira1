@@ -2,6 +2,7 @@ import { ArrowDown, ArrowRight, Check, CircleHelp, Leaf, MessageCircle, ShieldCh
 import Image from "next/image";
 import { LeadForm } from "@/components/lead-form";
 import { SiteHeader } from "@/components/site-header";
+import { ScrollReveal } from "@/components/scroll-reveal";
 import { createWhatsappHref } from "@/lib/whatsapp";
 import Link from "next/link";
 
@@ -58,8 +59,8 @@ export default function Home() {
             <figcaption>Itching and irritation can be difficult to talk about. Understanding the signals is a useful first step.</figcaption>
           </figure>
           <div className="symptom-image-grid">
-            <figure className="symptom-image-card"><Image src="/images/symptom-discharge.jpg" alt="Illustrated guide showing unusual discharge symptoms" fill sizes="(max-width: 720px) 100vw, 50vw" className="symptom-card-image" /><figcaption><strong>Unusual discharge?</strong><span>Changes in color or texture, unusual odor, discomfort, or recurring shifts are worth paying attention to.</span></figcaption></figure>
-            <figure className="symptom-image-card"><Image src="/images/symptom-pelvic-ache.jpg" alt="Illustrated guide showing recurring lower pelvic ache" fill sizes="(max-width: 720px) 100vw, 50vw" className="symptom-card-image" /><figcaption><strong>Why does that ache keep coming back?</strong><span>Lower abdominal ache, pelvic pressure, discomfort during daily routines, and recurring flare-ups deserve clarity.</span></figcaption></figure>
+            <ScrollReveal><figure className="symptom-image-card"><Image src="/images/symptom-discharge.jpg" alt="Illustrated guide showing unusual discharge symptoms" fill sizes="(max-width: 720px) 100vw, 1192px" className="symptom-card-image" /><figcaption><strong>Unusual discharge?</strong><span>Changes in color or texture, unusual odor, discomfort, or recurring shifts are worth paying attention to.</span></figcaption></figure></ScrollReveal>
+            <ScrollReveal><figure className="symptom-image-card"><Image src="/images/symptom-pelvic-ache.jpg" alt="Illustrated guide showing recurring lower pelvic ache" fill sizes="(max-width: 720px) 100vw, 1192px" className="symptom-card-image" /><figcaption><strong>Why does that ache keep coming back?</strong><span>Lower abdominal ache, pelvic pressure, discomfort during daily routines, and recurring flare-ups deserve clarity.</span></figcaption></figure></ScrollReveal>
           </div>
           <div className="cycle-strip"><div className="cycle-label"><span>THE CYCLE</span><strong>Temporary relief<br />isn&apos;t the same as clarity.</strong></div><div className="cycle-steps"><span>Discomfort</span><i aria-hidden="true">→</i><span>Quick fix</span><i aria-hidden="true">→</i><span>Short relief</span><i aria-hidden="true">→</i><span>Flare-up again</span><i aria-hidden="true">↺</i></div></div>
         </div>

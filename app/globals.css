@@ -137,8 +137,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .symptom-feature-media:after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, rgba(16,46,38,.62), transparent 44%); }
 .symptom-feature-media figcaption { position: absolute; z-index: 1; right: 25px; bottom: 21px; left: 25px; max-width: 410px; color: #fff; font-size: 11px; line-height: 1.7; }
 .symptom-card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 57px; }
-.symptom-image-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 52px; }
-.symptom-image-card { position: relative; min-height: 440px; margin: 0; overflow: hidden; background: #e6ece4; }
+.symptom-image-grid { display: grid; grid-template-columns: minmax(0, 920px); justify-content: center; gap: 30px; margin-top: 52px; }
+.scroll-reveal { width: 100%; }
+.scroll-reveal.is-ready { opacity: 0; transform: translateY(42px) scale(.985); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.75,.25,1); }
+.scroll-reveal.is-ready.is-visible { opacity: 1; transform: translateY(0) scale(1); }
+.scroll-reveal:nth-child(2).is-ready { transition-delay: .1s; }
+.symptom-image-card { position: relative; min-height: 540px; margin: 0; overflow: hidden; background: #e6ece4; }
 .symptom-card-image { object-fit: cover; object-position: center; transition: transform .5s ease; }
 .symptom-image-card:hover .symptom-card-image { transform: scale(1.025); }
 .symptom-image-card:after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(0deg, rgba(8,30,22,.86), rgba(8,30,22,0) 54%); }
@@ -403,7 +407,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .symptom-cycle-heading > p { margin: 0; }
   .symptom-feature-media { min-height: 300px; margin-top: 34px; }
   .symptom-feature-media figcaption { right: 16px; bottom: 15px; left: 16px; font-size: 10px; }
-  .symptom-image-grid { grid-template-columns: 1fr; gap: 12px; margin-top: 34px; }
+  .symptom-image-grid { gap: 18px; margin-top: 34px; }
   .symptom-image-card { min-height: 420px; }
   .symptom-image-card figcaption { right: 17px; bottom: 17px; left: 17px; }
   .symptom-image-card figcaption strong { font-size: 22px; }
