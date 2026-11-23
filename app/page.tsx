@@ -67,6 +67,16 @@ export default function Home() {
           <div className="cycle-strip"><div className="cycle-label"><span>THE CYCLE</span><strong>Temporary relief<br />isn&apos;t the same as clarity.</strong></div><div className="cycle-steps"><span>Discomfort</span><i aria-hidden="true">→</i><span>Quick fix</span><i aria-hidden="true">→</i><span>Short relief</span><i aria-hidden="true">→</i><span>Flare-up again</span><i aria-hidden="true">↺</i></div></div>
         </div>
       </section>
+      <section className="testimonials-section" id="testimonials">
+        <div className="section-shell">
+          <div className="testimonials-heading"><div><p className="eyebrow"><span /> 03 / CUSTOMER EXPERIENCES</p><h2>When someone finally says,<br /><em>&quot;I feel like myself again.&quot;</em></h2></div><p>These conversations reflect individual customer experiences shared with the Clevira team. Every body is different, and personal experiences are not a substitute for qualified medical advice.</p></div>
+          <div className="testimonial-stack">
+            <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-kunle.jpg" alt="WhatsApp conversation from a customer named Kunle about his Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /><figcaption><span>01</span><strong>Kunle&apos;s experience</strong></figcaption></figure></ScrollReveal>
+            <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-tunde.jpg" alt="WhatsApp conversation from a customer named Tunde about her Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /><figcaption><span>02</span><strong>Tunde&apos;s experience</strong></figcaption></figure></ScrollReveal>
+            <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-omolara.jpg" alt="WhatsApp conversation from a customer named Omolara about her Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /><figcaption><span>03</span><strong>Omolara&apos;s experience</strong></figcaption></figure></ScrollReveal>
+          </div>
+        </div>
+      </section>
       <section className="intro-section" id="about">
         <div className="intro-media-background" aria-hidden="true">
           <div className="intro-backdrop intro-backdrop-image-1" />
