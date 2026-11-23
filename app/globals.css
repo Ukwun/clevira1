@@ -127,6 +127,25 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .patient-story-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 30px; padding-top: 19px; border-top: 1px solid #dfe4dc; color: #89958b; font-size: 9px; }
 .patient-story-footer .text-link { margin-top: 0; }
 
+.symptom-cycle-section { padding: 104px 0 110px; background: #fff; }
+.symptom-cycle-heading { display: grid; grid-template-columns: 1.05fr .95fr; gap: 80px; align-items: end; }
+.symptom-cycle-heading h2 { margin: 17px 0 0; color: var(--forest-deep); font-family: var(--serif); font-size: clamp(40px, 4.7vw, 60px); font-weight: 400; letter-spacing: -.05em; line-height: 1.06; }
+.symptom-cycle-heading h2 em { color: #52705c; }
+.symptom-cycle-heading > p { max-width: 390px; margin: 0 0 7px auto; color: #707b73; font-size: 12px; line-height: 1.9; }
+.symptom-card-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 57px; }
+.symptom-card { position: relative; min-height: 245px; padding: 24px 20px 20px; border: 1px solid #e2e9e2; background: #f6f8f5; transition: transform .25s ease, background .25s ease, box-shadow .25s ease; }
+.symptom-card:hover { transform: translateY(-5px); background: #edf4ed; box-shadow: 0 14px 28px rgba(23,61,50,.08); }
+.symptom-card-number { position: absolute; top: 19px; right: 18px; color: #9cac9e; font-size: 9px; letter-spacing: .1em; }
+.symptom-card > svg { color: #698a70; }
+.symptom-card h3 { margin: 35px 0 0; color: var(--forest); font-family: var(--serif); font-size: 20px; font-weight: 400; }
+.symptom-card p { margin: 12px 0 0; color: #768179; font-size: 10px; line-height: 1.8; }
+.cycle-strip { display: grid; grid-template-columns: .7fr 1.3fr; gap: 35px; align-items: center; margin-top: 34px; padding: 23px 26px; background: var(--forest); color: #eaf2eb; }
+.cycle-label { display: flex; align-items: center; gap: 18px; }
+.cycle-label span { color: #b6e63f; font-size: 8px; letter-spacing: .16em; }
+.cycle-label strong { padding-left: 18px; border-left: 1px solid rgba(215,233,217,.25); color: #edf4ee; font-family: var(--serif); font-size: 18px; font-weight: 400; line-height: 1.3; }
+.cycle-steps { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #c3d2c5; font-size: 10px; }
+.cycle-steps i { color: #b6e63f; font-size: 18px; font-style: normal; }
+
 .intro-section { position: relative; isolation: isolate; overflow: hidden; padding: 103px 0 106px; background: var(--forest-deep); }
 .intro-media-background { position: absolute; z-index: 0; inset: 0; overflow: hidden; }
 .intro-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; background-position: center 42%; background-repeat: no-repeat; background-size: cover; opacity: 0; animation: intro-backdrop-transition 28s linear infinite; }
@@ -367,6 +386,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .patient-story-copy h2 { font-size: clamp(38px, 9.5vw, 50px); }
   .patient-story-copy .patient-story-lead { font-size: 16px; }
   .patient-story-highlight { padding: 19px 17px; font-size: 12px !important; box-shadow: 5px 5px 0 rgba(23,61,50,.08); }
+  .symptom-cycle-section { padding: 70px 0; }
+  .symptom-cycle-heading { grid-template-columns: 1fr; gap: 18px; }
+  .symptom-cycle-heading > p { margin: 0; }
+  .symptom-card-grid { grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 34px; }
+  .symptom-card { min-height: 220px; padding: 18px 15px; }
+  .symptom-card h3 { font-size: 18px; }
+  .cycle-strip { grid-template-columns: 1fr; gap: 22px; margin-top: 24px; padding: 20px 16px; }
+  .cycle-label { align-items: flex-start; flex-direction: column; gap: 12px; }
+  .cycle-label strong { padding: 0; border: 0; font-size: 17px; }
+  .cycle-steps { flex-wrap: wrap; justify-content: flex-start; row-gap: 8px; }
   .intro-grid { grid-template-columns: 1fr; gap: 25px; }
   .intro-overline { min-height: unset; flex-direction: row; align-items: center; }
   .intro-icon { width: 37px; height: 37px; }

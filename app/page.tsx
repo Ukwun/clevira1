@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRight, Check, CircleHelp, Leaf, MessageCircle, ShieldCheck, Sprout, Truck } from "lucide-react";
+import { Activity, ArrowDown, ArrowRight, Check, CircleHelp, Clock3, Leaf, MessageCircle, RefreshCcw, ShieldCheck, Sprout, Truck, WalletCards } from "lucide-react";
 import Image from "next/image";
 import { LeadForm } from "@/components/lead-form";
 import { SiteHeader } from "@/components/site-header";
@@ -45,6 +45,21 @@ export default function Home() {
             <p>Nobody should have to carry quiet discomfort in secrecy or feel ashamed asking real questions about their health. You don&apos;t need shame or endless guesswork—you need clarity, consistency, and support that helps you make a more informed next step.</p>
             <div className="patient-story-footer"><span>Shared by Mr. Chidi Ndibuisi</span><a className="text-link" href="#register">Explore Clevira <ArrowRight size={16} aria-hidden="true" /></a></div>
           </article>
+        </div>
+      </section>
+      <section className="symptom-cycle-section" id="symptoms">
+        <div className="section-shell">
+          <div className="symptom-cycle-heading">
+            <div><p className="eyebrow"><span /> 02 / SYMPTOM &amp; CYCLE RECOGNITION</p><h2>We understand the part<br /><em>people don&apos;t always see.</em></h2></div>
+            <p>It&apos;s not only the symptom. It&apos;s the interruptions, the worry, and the exhausting effort of trying one temporary fix after another while life keeps moving around you.</p>
+          </div>
+          <div className="symptom-card-grid">
+            <article className="symptom-card"><span className="symptom-card-number">01</span><Activity size={23} aria-hidden="true" /><h3>Persistent itching</h3><p>The kind of discomfort that makes it hard to focus, sleep, sit still, or feel present in your own day.</p></article>
+            <article className="symptom-card"><span className="symptom-card-number">02</span><RefreshCcw size={23} aria-hidden="true" /><h3>Recurring irritation</h3><p>Just when you think it has passed, the irritation returns and you start questioning what triggered it this time.</p></article>
+            <article className="symptom-card"><span className="symptom-card-number">03</span><Clock3 size={23} aria-hidden="true" /><h3>Flare-ups at the worst time</h3><p>Plans change. Patience gets thin. You find yourself managing your day around a problem you rarely talk about.</p></article>
+            <article className="symptom-card"><span className="symptom-card-number">04</span><WalletCards size={23} aria-hidden="true" /><h3>Money spent guessing</h3><p>One random quick fix after another can leave you with less money, more questions, and no clear sense of what to do next.</p></article>
+          </div>
+          <div className="cycle-strip"><div className="cycle-label"><span>THE CYCLE</span><strong>Temporary relief<br />isn&apos;t the same as clarity.</strong></div><div className="cycle-steps"><span>Discomfort</span><i aria-hidden="true">→</i><span>Quick fix</span><i aria-hidden="true">→</i><span>Short relief</span><i aria-hidden="true">→</i><span>Flare-up again</span><i aria-hidden="true">↺</i></div></div>
         </div>
       </section>
       <section className="intro-section" id="about">
