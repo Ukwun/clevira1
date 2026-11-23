@@ -28,6 +28,25 @@ export default function Home() {
         <figure className="hero-visual"><div className="hero-orbit hero-orbit-one" aria-hidden="true" /><div className="hero-orbit hero-orbit-two" aria-hidden="true" /><div className="hero-botanical hero-botanical-one" aria-hidden="true" /><div className="hero-botanical hero-botanical-two" aria-hidden="true" /><div className="hero-image-frame"><div className="hero-photo-wrap"><Image src="/images/clevira-bottle.png" alt="Clevira Herbal Capsules bottle" fill sizes="(max-width: 720px) 90vw, (max-width: 1200px) 46vw, 560px" loading="eager" className="hero-product-image" /></div></div></figure>
         <div className="hero-actions"><a className="button button-primary" href="#register" data-track="cta_buy_now">SEE PACKAGES <ArrowRight size={17} aria-hidden="true" /></a><a className="button button-secondary" href={whatsappHref} target="_blank" rel="noreferrer" data-track="cta_whatsapp"><MessageCircle size={17} aria-hidden="true" /> TALK TO OUR TEAM</a></div><p className="hero-footnote"><ShieldCheck size={15} aria-hidden="true" /> Don&apos;t waste money guessing. Get the facts before you decide.</p><a className="scroll-cue" href="#about" aria-label="Scroll to learn more"><ArrowDown size={16} aria-hidden="true" /></a>
       </section>
+      <section className="patient-story-section" id="patient-story">
+        <div className="section-shell patient-story-grid">
+          <figure className="patient-story-media">
+            <Image src="/images/patient-story.jpg" alt="Illustrative image of a man holding Clevira Herbal Capsules" fill sizes="(max-width: 720px) 100vw, 46vw" className="patient-story-image" />
+            <figcaption>Illustrative image. This story is for context and does not represent a verified patient testimonial.</figcaption>
+          </figure>
+          <article className="patient-story-copy">
+            <p className="eyebrow"><span /> A STORY ABOUT FINDING CLARITY</p>
+            <h2>I was tired of pretending<br /><em>everything was fine.</em></h2>
+            <p className="patient-story-lead">For months, I didn&apos;t feel like myself—and the worst part was acting normal when I felt anything but.</p>
+            <p>It wasn&apos;t just the physical discomfort showing up at the worst possible times. It was the mental weight sitting behind my eyes every single day. The quiet dread when symptoms flared up again. The embarrassment of having a problem that felt too personal, too awkward, or too messy to bring up casually.</p>
+            <p>You start changing small habits without even realizing it. You get quiet in rooms where you used to laugh easily. When someone close asks, &quot;Are you okay?&quot; you say, &quot;Yeah, just tired,&quot; because explaining what&apos;s really going on feels exhausting.</p>
+            <p>Like a lot of people, I tried patching things up on the fly—a quick fix here, a random suggestion there, money spent out of frustration and hope. Guessing with your body is draining. Every unknown symptom makes your mind race to the worst conclusion.</p>
+            <p>Things started to feel more manageable when I stopped chasing random quick fixes and focused on consistency: understanding my symptoms, checking product information, paying closer attention to my habits, and asking better questions.</p>
+            <p>Nobody should have to carry quiet discomfort in secrecy or feel ashamed asking real questions about their health. You don&apos;t need shame or endless guesswork—you need clarity, consistency, and support that helps you make a more informed next step.</p>
+            <div className="patient-story-footer"><span>Illustrative patient story</span><a className="text-link" href="#register">Explore Clevira <ArrowRight size={16} aria-hidden="true" /></a></div>
+          </article>
+        </div>
+      </section>
       <section className="intro-section" id="about">
         <div className="intro-media-background" aria-hidden="true">
           <div className="intro-backdrop intro-backdrop-image-1" />
