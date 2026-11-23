@@ -122,6 +122,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .patient-story-copy h2 em { color: #52705c; }
 .patient-story-copy p { margin: 20px 0 0; color: #69766d; font-size: 12px; line-height: 1.9; }
 .patient-story-copy .patient-story-lead { color: #3c4e43; font-family: var(--serif); font-size: 18px; line-height: 1.55; }
+.patient-story-highlight { margin-top: 27px !important; padding: 24px 25px; border: 1px solid rgba(23,61,50,.16); border-left: 5px solid var(--forest); background: #dce9df; color: #263f32 !important; box-shadow: 8px 8px 0 rgba(23,61,50,.08); font-size: 13px !important; line-height: 1.85 !important; }
+.patient-story-highlight strong { color: var(--forest-deep); font-weight: 800; }
 .patient-story-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 30px; padding-top: 19px; border-top: 1px solid #dfe4dc; color: #89958b; font-size: 9px; }
 .patient-story-footer .text-link { margin-top: 0; }
 
@@ -364,6 +366,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .patient-story-media { min-height: 470px; }
   .patient-story-copy h2 { font-size: clamp(38px, 9.5vw, 50px); }
   .patient-story-copy .patient-story-lead { font-size: 16px; }
+  .patient-story-highlight { padding: 19px 17px; font-size: 12px !important; box-shadow: 5px 5px 0 rgba(23,61,50,.08); }
   .intro-grid { grid-template-columns: 1fr; gap: 25px; }
   .intro-overline { min-height: unset; flex-direction: row; align-items: center; }
   .intro-icon { width: 37px; height: 37px; }
