@@ -173,10 +173,15 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .testimonial-card:hover .testimonial-image { transform: scale(1.015); }
 
 .transparency-section { padding: 104px 0 110px; background: #fff; }
-.transparency-heading { display: grid; grid-template-columns: 1.05fr .95fr; gap: 80px; align-items: end; }
+.transparency-heading { display: grid; grid-template-columns: 1fr; justify-items: center; text-align: center; }
 .transparency-heading h2 { margin: 17px 0 0; color: var(--forest-deep); font-family: var(--serif); font-size: clamp(40px, 4.7vw, 60px); font-weight: 400; letter-spacing: -.05em; line-height: 1.06; }
 .transparency-heading h2 em { color: #52705c; }
-.transparency-heading > p { max-width: 430px; margin: 0 0 7px auto; color: #707b73; font-size: 12px; line-height: 1.9; }
+.transparency-heading > div { max-width: 680px; }
+.transparency-heading .eyebrow { justify-content: center; }
+.transparency-heading .product-intro-copy { max-width: 560px; margin: 20px auto 0; color: #707b73; font-size: 12px; line-height: 1.9; }
+.product-intro-showcase { position: relative; width: min(100%, 620px); height: 470px; margin: 18px auto 0; }
+.product-intro-image { object-fit: contain; filter: drop-shadow(0 24px 28px rgba(27,52,40,.16)); animation: product-arrive .8s ease-out both; }
+.product-intro-showcase figcaption { position: absolute; right: 0; bottom: 20px; left: 0; color: #7a897e; font-size: 9px; letter-spacing: .14em; text-align: center; }
 .transparency-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 80px; margin-top: 58px; padding-top: 30px; border-top: 1px solid var(--line); }
 .transparency-overview { max-width: 320px; }
 .transparency-icon { width: 44px; height: 44px; display: grid; place-items: center; color: #698a70; background: #edf4ed; border-radius: 50%; }
@@ -458,7 +463,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .testimonial-card { width: min(100%, 390px); }
   .transparency-section { padding: 70px 0; }
   .transparency-heading { grid-template-columns: 1fr; gap: 18px; }
-  .transparency-heading > p { margin: 0; }
+  .product-intro-showcase { height: 350px; margin-top: 10px; }
   .transparency-grid { grid-template-columns: 1fr; gap: 34px; margin-top: 34px; }
   .transparency-overview { max-width: 520px; }
   .transparency-detail-row { grid-template-columns: 1fr; gap: 7px; padding: 15px 0; }
