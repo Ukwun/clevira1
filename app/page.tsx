@@ -69,7 +69,7 @@ export default function Home() {
       </section>
       <section className="testimonials-section" id="testimonials">
         <div className="section-shell">
-          <div className="testimonials-heading"><div><p className="eyebrow"><span /> 03 / CUSTOMER EXPERIENCES</p><h2>When someone finally says,<br /><em>&quot;I feel like myself again.&quot;</em></h2></div><p>These conversations reflect individual customer experiences shared with the Clevira team. Every body is different, and personal experiences are not a substitute for qualified medical advice.</p></div>
+          <div className="testimonials-heading"><div><p className="eyebrow"><span /> 03 / CUSTOMER EXPERIENCES</p><h2>When someone finally says,<br /><em>&quot;I feel like myself again.&quot;</em></h2></div></div>
           <div className="testimonial-stack">
             <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-kunle.jpg" alt="WhatsApp conversation from a customer named Kunle about his Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /></figure></ScrollReveal>
             <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-tunde.jpg" alt="WhatsApp conversation from a customer named Tunde about her Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /></figure></ScrollReveal>
