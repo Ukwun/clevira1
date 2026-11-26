@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { formatNaira, getProductOffer, type ProductOfferId } from "@/lib/offer";
+import { PUBLIC_PRIVACY_EMAIL } from "@/lib/contact";
 
 type OrderPayload = {
   name?: unknown;
@@ -44,7 +45,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Please complete all required order details." }, { status: 400 });
   }
 
-  const notificationEmail = process.env.ORDER_NOTIFICATION_EMAIL;
+  const notificationEmail = process.env.ORDER_NOTIFICATION_EMAIL || PUBLIC_PRIVACY_EMAIL;
   const apiKey = process.env.RESEND_API_KEY;
   const fromEmail = process.env.ORDER_FROM_EMAIL;
   if (!notificationEmail || !apiKey || !fromEmail) {
