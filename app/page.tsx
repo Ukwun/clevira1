@@ -127,12 +127,12 @@ export default function Home() {
                 <p>When symptoms are left unchecked, the underlying problem can worsen or spread. But symptoms alone cannot prove what is causing them: infections, irritation, allergies, and other health conditions can look similar. Testing and qualified medical guidance help you choose the right next step.</p>
                 <h4>Why antibiotics and creams may not solve recurring symptoms long-term:</h4>
                 <div className="infection-truth-points">
-                  <div><strong>They may not match the cause</strong><span>Antibiotics do not treat viral or fungal conditions, and a cream may not be appropriate for every symptom.</span></div>
+                  <div><strong>The treatment must match the cause</strong><span>Antibiotics work against certain bacterial infections, not viral or fungal conditions, and creams are not appropriate for every symptom.</span></div>
                   <div><strong>Symptoms can return</strong><span>If the diagnosis is unclear or treatment is not completed as directed, symptoms may continue or recur.</span></div>
-                  <div><strong>They can have risks</strong><span>Unnecessary medicines can cause side effects, disrupt normal flora, or contribute to antibiotic resistance.</span></div>
-                  <div><strong>Reassessment matters</strong><span>Recurring symptoms deserve a fresh clinical review instead of repeated guesswork.</span></div>
+                  <div><strong>Unnecessary treatment has risks</strong><span>Medicines can cause side effects, and antibiotics can temporarily alter normal gut bacteria.</span></div>
+                  <div><strong>Resistance makes care harder</strong><span>Inappropriate antibiotic use can contribute to resistant bacteria, which is why recurring symptoms deserve reassessment.</span></div>
                 </div>
-                <p className="infection-truth-closing"><strong>That&apos;s why recurring symptoms can feel like years of cycling through appointments, prescriptions, and uncertainty.</strong> Clear testing and appropriate care can help replace guesswork with a more informed next step.</p>
+                <p className="infection-truth-closing"><strong>That&apos;s why recurring symptoms can feel like years of cycling through appointments, prescriptions, and uncertainty.</strong> Clear testing and appropriate care can help replace false hope and guesswork with a more informed next step.</p>
             </div>
           </article>
         </div>
