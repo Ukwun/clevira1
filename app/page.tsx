@@ -129,13 +129,16 @@ export default function Home() {
               </figure>
             </div>
             <div className="infection-truth-copy">
-              <p className="infection-truth-lead">Many infections start with signs that are easy to dismiss—a change in discharge, irritation, urinary discomfort, a recurring ache, or a skin change that keeps returning.</p>
-              <p>When symptoms are left unchecked, the underlying problem can worsen or spread. But symptoms alone cannot prove what is causing them: infections, irritation, allergies, and other health conditions can look similar. Testing and qualified medical guidance help you choose the right next step.</p>
-              <div className="infection-truth-points">
-                <div><strong>01 / Notice the pattern</strong><span>Record what changes, when it returns, and whether it is getting worse.</span></div>
-                <div><strong>02 / Get clear answers</strong><span>Ask a qualified healthcare professional whether testing is appropriate.</span></div>
-                <div><strong>03 / Follow the right plan</strong><span>Use prescribed treatments exactly as directed and verify any supplement before taking it.</span></div>
-              </div>
+                <p className="infection-truth-lead">Many infections start with signs that are easy to dismiss—a change in discharge, irritation, urinary discomfort, a recurring ache, or a skin change that keeps returning.</p>
+                <p>When symptoms are left unchecked, the underlying problem can worsen or spread. But symptoms alone cannot prove what is causing them: infections, irritation, allergies, and other health conditions can look similar. Testing and qualified medical guidance help you choose the right next step.</p>
+                <h4>Why antibiotics and creams may not solve recurring symptoms long-term:</h4>
+                <div className="infection-truth-points">
+                  <div><strong>They may not match the cause</strong><span>Antibiotics do not treat viral or fungal conditions, and a cream may not be appropriate for every symptom.</span></div>
+                  <div><strong>Symptoms can return</strong><span>If the diagnosis is unclear or treatment is not completed as directed, symptoms may continue or recur.</span></div>
+                  <div><strong>They can have risks</strong><span>Unnecessary medicines can cause side effects, disrupt normal flora, or contribute to antibiotic resistance.</span></div>
+                  <div><strong>Reassessment matters</strong><span>Recurring symptoms deserve a fresh clinical review instead of repeated guesswork.</span></div>
+                </div>
+                <p className="infection-truth-closing"><strong>That&apos;s why recurring symptoms can feel like years of cycling through appointments, prescriptions, and uncertainty.</strong> Clear testing and appropriate care can help replace guesswork with a more informed next step.</p>
             </div>
           </article>
         </div>
