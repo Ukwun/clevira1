@@ -93,6 +93,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .hero-actions .button-primary svg { color: var(--lime); }
 .button-secondary { border-color: #dfe6e0; color: var(--forest); background: #fff; }
 .button-secondary:hover { border-color: #99afa0; background: #f8faf8; }
+.sticky-order-button { position: fixed; z-index: 18; right: 22px; bottom: 24px; display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 17px; border: 1px solid #b6e63f; border-radius: 999px; background: var(--forest); color: #fff; box-shadow: 0 12px 28px rgba(16,46,38,.22); font-size: 10px; font-weight: 700; letter-spacing: .08em; opacity: 0; pointer-events: none; transform: translateY(14px); transition: opacity .25s ease, transform .25s ease, background .2s ease; }
+.sticky-order-button.is-visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.sticky-order-button:hover { background: #245746; }
+.sticky-order-button svg:last-child { color: var(--lime); }
 .hero-footnote { grid-area: footnote; display: flex; align-items: center; gap: 7px; margin-top: 16px; color: #7a847e; font-size: 10px; }
 .hero-footnote svg { color: #6c9075; }
 .hero-visual { grid-area: visual; position: relative; align-self: center; width: 100%; height: 580px; margin: 0; isolation: isolate; }
@@ -453,6 +457,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .regulatory-badge { margin-top: 15px; padding: 11px 13px; font-size: 10px; }
   .hero-actions { margin-top: 11px; }
   .button { min-height: 45px; gap: 10px; padding-inline: 13px; font-size: 9px; }
+  .sticky-order-button { right: 14px; bottom: 17px; min-height: 46px; padding: 0 14px; font-size: 9px; }
   .hero-footnote { font-size: 9px; }
   .hero-visual { height: clamp(330px, 105vw, 400px); margin-top: 5px; margin-bottom: 12px; }
   .hero-botanical-one { top: 18%; right: 1%; transform: rotate(-35deg) scale(.76); }
