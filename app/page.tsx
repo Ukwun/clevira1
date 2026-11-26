@@ -60,7 +60,7 @@ export default function Home() {
       <section className="symptom-cycle-section" id="symptoms">
         <div className="section-shell">
           <div className="symptom-cycle-heading">
-            <div><p className="eyebrow"><span /> 02 / SYMPTOM &amp; CYCLE RECOGNITION</p><h2>Are you experiencing any of these<br /><em>symptoms or side effects?</em></h2></div>
+            <div><p className="eyebrow"><span /> 02 / SYMPTOM &amp; CYCLE RECOGNITION</p><h2>DON&apos;T WAIT UNTIL<br /><em>YOUR INFECTIONS GET TO THIS LEVEL.</em></h2></div>
             <p>It&apos;s not only the symptom. It&apos;s the interruptions, the worry, and the exhausting effort of trying one temporary fix after another while life keeps moving around you. These signs can have different causes, so noticing patterns is a reason to seek clear medical guidance.</p>
           </div>
           <figure className="symptom-feature-media">
