@@ -18,6 +18,15 @@ const introBackgroundImages = [
   "/images/discomfort-woman.jpg",
   "/images/discomfort-man-2.jpg",
 ];
+const healthExampleImages = [
+  { src: "/images/health-example-oral.jpg", alt: "Close-up of a tongue with a visible coating", width: 768, height: 998 },
+  { src: "/images/health-example-skin.jpg", alt: "Close-up of skin with visible spots", width: 677, height: 1200 },
+  { src: "/images/health-example-arm.jpg", alt: "Person gently holding their arm", width: 275, height: 183 },
+  { src: "/images/health-example-textured-skin.jpg", alt: "Close-up of skin with a textured appearance", width: 480, height: 359 },
+  { src: "/images/health-example-collage.png", alt: "Collage of close-up photos of skin and body areas", width: 574, height: 491 },
+  { src: "/images/health-example-discomfort.jpg", alt: "Person sitting while holding their lower back", width: 612, height: 408 },
+  { src: "/images/health-example-legs.jpeg", alt: "Close-up of legs with visible skin discoloration", width: 768, height: 960 },
+];
 
 export default function Home() {
   return <>
@@ -67,14 +76,41 @@ export default function Home() {
           <div className="cycle-strip"><div className="cycle-label"><span>THE CYCLE</span><strong>Temporary relief<br />isn&apos;t the same as clarity.</strong></div><div className="cycle-steps"><span>Discomfort</span><i aria-hidden="true">→</i><span>Quick fix</span><i aria-hidden="true">→</i><span>Short relief</span><i aria-hidden="true">→</i><span>Flare-up again</span><i aria-hidden="true">↺</i></div></div>
         </div>
       </section>
+      <section className="health-gallery-section" aria-labelledby="health-gallery-heading">
+        <div className="section-shell">
+          <div className="health-gallery-heading">
+            <div>
+              <p className="eyebrow"><span /> DON’T WAIT UNTIL YOUR INFECTIONS GET TO THIS LEVEL</p>
+              <h2 id="health-gallery-heading"><span aria-hidden="true">⏳</span> Don&apos;t ignore visible changes</h2>
+            </div>
+          </div>
+          <div className="health-gallery-grid">
+            {healthExampleImages.map((image) => (
+              <figure className="health-gallery-item" key={image.src}>
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  sizes="(max-width: 720px) 50vw, (max-width: 1000px) 50vw, 33vw"
+                  className="health-gallery-image"
+                />
+              </figure>
+            ))}
+          </div>
+        </div>
+      </section>
       <section className="testimonials-section" id="testimonials">
         <div className="section-shell">
           <div className="testimonials-heading"><div><p className="eyebrow"><span /> 03 / CUSTOMER EXPERIENCES</p><h2>When someone finally says,<br /><em>&quot;I feel like myself again.&quot;</em></h2></div></div>
           <div className="testimonial-stack">
             <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-kunle.jpg" alt="WhatsApp conversation from a customer named Kunle about his Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /></figure></ScrollReveal>
             <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-tunde.jpg" alt="WhatsApp conversation from a customer named Tunde about her Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /></figure></ScrollReveal>
+            <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-lab-history.jpg" alt="WhatsApp conversation showing a customer's earlier test result and treatment history" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /></figure></ScrollReveal>
             <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-omolara.jpg" alt="WhatsApp conversation from a customer named Omolara about her Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /></figure></ScrollReveal>
+            <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-tinu.jpg" alt="WhatsApp conversation from Madam Tinu sharing a personal health update" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /></figure></ScrollReveal>
             <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-tobi.jpg" alt="WhatsApp conversation from a customer named Tobi about his Clevira experience" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /></figure></ScrollReveal>
+            <ScrollReveal><figure className="testimonial-card"><Image src="/images/testimonial-lab-followup.jpg" alt="WhatsApp conversation showing a customer's follow-up test result" fill sizes="(max-width: 720px) 100vw, 920px" className="testimonial-image" /></figure></ScrollReveal>
           </div>
         </div>
       </section>
