@@ -124,6 +124,9 @@ export default function Home() {
             <div className="infection-truth-heading">
               <p className="eyebrow"><span /> WHAT PERSISTENT SYMPTOMS CAN MEAN</p>
               <h3>The truth about<br /><em>chronic infection symptoms.</em></h3>
+              <figure className="infection-truth-media">
+                <Image src="/images/male-figure-with-throat-pain.jpg" alt="Illustration of a man experiencing throat pain with a microorganism in the background" fill sizes="(max-width: 720px) 100vw, 720px" className="infection-truth-image" />
+              </figure>
             </div>
             <div className="infection-truth-copy">
               <p className="infection-truth-lead">Many infections start with signs that are easy to dismiss—a change in discharge, irritation, urinary discomfort, a recurring ache, or a skin change that keeps returning.</p>
@@ -133,9 +136,6 @@ export default function Home() {
                 <div><strong>02 / Get clear answers</strong><span>Ask a qualified healthcare professional whether testing is appropriate.</span></div>
                 <div><strong>03 / Follow the right plan</strong><span>Use prescribed treatments exactly as directed and verify any supplement before taking it.</span></div>
               </div>
-              <figure className="infection-truth-media">
-                <Image src="/images/male-figure-with-throat-pain.jpg" alt="Illustration of a man experiencing throat pain with a microorganism in the background" fill sizes="(max-width: 720px) 100vw, 720px" className="infection-truth-image" />
-              </figure>
             </div>
           </article>
         </div>
