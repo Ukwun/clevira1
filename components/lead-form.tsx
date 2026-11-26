@@ -11,7 +11,8 @@ import { createWhatsappHref } from "@/lib/whatsapp";
 
 type SubmissionState =
   | { status: "idle" }
-  | { status: "handoff"; whatsappHref: string }
+  | { status: "submitting" }
+  | { status: "handoff"; whatsappHref: string; emailSent: boolean }
   | { status: "error"; message: string };
 
 export function LeadForm() {
@@ -19,14 +20,13 @@ export function LeadForm() {
   const [offerId, setOfferId] = useState<ProductOfferId | "">("");
   const selectedOffer = getProductOffer(offerId);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
     const formData = new FormData(form);
     const payload = {
       name: String(formData.get("name") ?? "").trim(),
       whatsappPhone: String(formData.get("whatsappPhone") ?? "").trim(),
-      email: String(formData.get("email") ?? "").trim(),
       streetAddress: String(formData.get("streetAddress") ?? "").trim(),
       city: String(formData.get("city") ?? "").trim(),
       state: String(formData.get("state") ?? "").trim(),
@@ -52,7 +52,6 @@ export function LeadForm() {
       "",
       `Name: ${payload.name}`,
       `WhatsApp number: ${payload.whatsappPhone}`,
-      `Email: ${payload.email}`,
       `Package: ${offer.label} (${bottleCount} ${bottleCount === 1 ? "bottle" : "bottles"})`,
       `Price: ${formatNaira(offer.priceNgn)}`,
       "Delivery: FREE nationwide",
@@ -61,7 +60,21 @@ export function LeadForm() {
       "Please confirm availability, delivery, and payment instructions. I understand this website has not taken payment.",
     ].join("\n"));
 
-    setState({ status: "handoff", whatsappHref });
+    setState({ status: "submitting" });
+    let emailSent = false;
+    try {
+      const response = await fetch("/api/order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const result = (await response.json()) as { emailSent?: boolean };
+      emailSent = response.ok && result.emailSent === true;
+    } catch {
+      emailSent = false;
+    }
+
+    setState({ status: "handoff", whatsappHref, emailSent });
     window.open(whatsappHref, "_blank", "noopener,noreferrer");
   }
 
@@ -167,21 +180,25 @@ export function LeadForm() {
       </label>
 
       <p className="form-privacy">
-        Your details are added to a WhatsApp message only when you continue. You review it and tap Send there. Read the{" "}
+        Your order details are sent to our order inbox and added to a WhatsApp message when you continue. You review it and tap Send there. Read the{" "}
         <a href="/privacy">privacy notice</a>.
       </p>
 
       <button
         className="button button-primary form-submit"
         type="submit"
+        disabled={state.status === "submitting"}
       >
-        Buy now
+        {state.status === "submitting" ? "Preparing…" : "Buy now"}
         <span aria-hidden="true">↗</span>
       </button>
       <div className="form-feedback" aria-live="polite" role="status">
+        {state.status === "submitting" && (
+          <p className="form-success">Preparing your order details and WhatsApp conversation…</p>
+        )}
         {state.status === "handoff" && (
           <p className="form-success">
-            Your order details are ready for WhatsApp. Review the message and tap Send to place your request. If WhatsApp did not open,{" "}
+            Your order details are ready for WhatsApp{state.emailSent ? " and have been sent to our order inbox" : "; email notification could not be confirmed"}. Review the message and tap Send to place your request. If WhatsApp did not open,{" "}
             <a href={state.whatsappHref} target="_blank" rel="noreferrer">continue to WhatsApp</a>. No order is sent and no payment is taken until you choose what to do in WhatsApp.
           </p>
         )}
