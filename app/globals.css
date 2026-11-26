@@ -112,6 +112,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .hero-botanical-one { top: 20%; right: 3%; }
 .hero-botanical-two { bottom: 18%; left: 4%; transform: rotate(142deg) scale(.8); }
 .scroll-cue { position: absolute; left: 5px; bottom: 22px; width: 29px; height: 29px; display: grid; place-items: center; border: 1px solid #e1e7e1; border-radius: 50%; color: #748279; }
+.scroll-marker { display: block; width: 100%; height: 1px; margin-top: -1px; pointer-events: none; }
 @keyframes product-arrive { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
 
 .patient-story-section { padding: 104px 0 110px; background: #f7f5ef; }

@@ -58,6 +58,7 @@ export default function Home() {
           </article>
         </div>
       </section>
+      <span id="patient-story-end" className="scroll-marker" aria-hidden="true" />
       <section className="symptom-cycle-section" id="symptoms">
         <div className="section-shell">
           <div className="symptom-cycle-heading">

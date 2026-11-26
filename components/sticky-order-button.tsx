@@ -10,12 +10,15 @@ export function StickyOrderButton({ href }: StickyOrderButtonProps) {
 
   useEffect(() => {
     const story = document.getElementById("patient-story");
-    if (!story) return;
+    const storyEnd = document.getElementById("patient-story-end");
+    if (!story || !storyEnd) return;
 
     let frame = 0;
     const updateVisibility = () => {
       frame = 0;
-      setIsVisible(story.getBoundingClientRect().bottom <= 0);
+      const endPosition = storyEnd.getBoundingClientRect().top;
+      const storyBottom = story.getBoundingClientRect().bottom;
+      setIsVisible(endPosition <= 0 || storyBottom <= 0);
     };
     const onScroll = () => {
       if (!frame) frame = window.requestAnimationFrame(updateVisibility);
@@ -24,9 +27,12 @@ export function StickyOrderButton({ href }: StickyOrderButtonProps) {
     updateVisibility();
     window.addEventListener("scroll", onScroll, { passive: true });
     window.addEventListener("resize", onScroll);
+    const observer = new IntersectionObserver(updateVisibility, { threshold: [0, 1] });
+    observer.observe(storyEnd);
     return () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onScroll);
+      observer.disconnect();
       if (frame) window.cancelAnimationFrame(frame);
     };
   }, []);
