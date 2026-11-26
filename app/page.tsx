@@ -7,6 +7,7 @@ import { createWhatsappHref } from "@/lib/whatsapp";
 import Link from "next/link";
 
 const whatsappHref = createWhatsappHref("Hello, I need clearer information about bacterial infection symptoms and available next steps.");
+const orderWhatsappHref = createWhatsappHref("Hello Clevira, I would like to place an order request. Please send me the available packages, price, delivery information, and payment instructions.");
 const faqs = [
   { question: "What should I do if symptoms keep returning?", answer: "Recurring symptoms can be exhausting and make it tempting to repeat what seemed to help before. Similar symptoms can have different causes, so a qualified healthcare professional can help identify the right next step. If you are also considering Clevira, ask for its full product information and check with a healthcare professional whether it is appropriate for you. Do not delay an assessment to try it." },
   { question: "Can a herbal product cure a bacterial infection?", answer: "Wanting a simple answer is understandable, especially when symptoms keep disrupting your day. But a herbal product should not be assumed to cure a bacterial infection. Clevira is not presented here as a proven treatment or a substitute for medical care. If you suspect an infection, seek qualified assessment and follow your clinician's advice. If you still want to explore Clevira, get its full ingredient list and any applicable registration details, then ask a healthcare professional whether it is appropriate for you." },
@@ -53,7 +54,7 @@ export default function Home() {
             <p>Like a lot of people, I tried patching things up on the fly—a quick fix here, a random suggestion there, money spent out of frustration and hope. Guessing with your body is draining. Every unknown symptom makes your mind race to the worst conclusion.</p>
             <p className="patient-story-highlight">That was how I came across <strong>Clevira Herbal Capsules</strong>. Instead of treating it like a one-day gamble, I committed to taking it consistently as herbal support while paying closer attention to my body and daily habits. Over time, the constant cycle of nagging discomfort and second-guessing finally started to ease up. For the first time in months, I wasn&apos;t walking around on edge, snapping at people I care about, or hiding behind excuses just to get through the day.</p>
             <p>Nobody should have to carry quiet discomfort in secrecy or feel ashamed asking real questions about their health. You don&apos;t need shame or endless guesswork—you need clarity, consistency, and support that helps you make a more informed next step.</p>
-            <div className="patient-story-footer"><span>Shared by Mr. Chidi Ndibuisi</span><a className="text-link" href="#register">Explore Clevira <ArrowRight size={16} aria-hidden="true" /></a></div>
+            <div className="patient-story-footer"><span>Shared by Mr. Chidi Ndibuisi</span><div className="patient-story-actions"><a className="button button-primary patient-story-order" href={orderWhatsappHref} target="_blank" rel="noreferrer" data-track="cta_buy_now">ORDER NOW <ArrowRight size={16} aria-hidden="true" /></a><a className="text-link" href="#register">Explore Clevira <ArrowRight size={16} aria-hidden="true" /></a></div></div>
           </article>
         </div>
       </section>
