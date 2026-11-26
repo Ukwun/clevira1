@@ -193,6 +193,16 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
 .product-intro-showcase { position: relative; width: min(100%, 620px); height: 470px; margin: 18px auto 0; }
 .product-intro-image { object-fit: contain; filter: drop-shadow(0 24px 28px rgba(27,52,40,.16)); animation: product-arrive .8s ease-out both; }
 .product-intro-showcase figcaption { position: absolute; right: 0; bottom: 20px; left: 0; color: #7a897e; font-size: 9px; letter-spacing: .14em; text-align: center; }
+.infection-truth-panel { display: grid; grid-template-columns: .8fr 1.2fr; gap: 58px; margin: 66px auto 0; padding: 48px 52px 52px; border: 1px solid #dce6dc; border-radius: 24px; background: linear-gradient(135deg, #f3f7f1, #fbfcf9); box-shadow: 0 20px 50px rgba(27,52,40,.07); }
+.infection-truth-heading h3 { margin: 17px 0 0; color: var(--forest-deep); font-family: var(--serif); font-size: clamp(34px, 4vw, 52px); font-weight: 400; letter-spacing: -.045em; line-height: 1.04; }
+.infection-truth-heading h3 em { color: #52705c; }
+.infection-truth-copy { color: #536259; font-size: 16px; line-height: 1.8; }
+.infection-truth-copy p { margin: 0 0 18px; }
+.infection-truth-copy .infection-truth-lead { color: var(--forest); font-size: 20px; line-height: 1.55; }
+.infection-truth-points { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 30px; padding-top: 24px; border-top: 1px solid #dce6dc; }
+.infection-truth-points div { display: grid; align-content: start; gap: 7px; }
+.infection-truth-points strong { color: var(--forest-deep); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+.infection-truth-points span { color: #6c796f; font-size: 14px; line-height: 1.65; }
 .transparency-grid { display: grid; grid-template-columns: .75fr 1.25fr; gap: 80px; margin-top: 58px; padding-top: 30px; border-top: 1px solid var(--line); }
 .transparency-overview { max-width: 320px; }
 .transparency-icon { width: 44px; height: 44px; display: grid; place-items: center; color: #698a70; background: #edf4ed; border-radius: 50%; }
@@ -481,6 +491,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .transparency-section { padding: 70px 0; }
   .transparency-heading { grid-template-columns: 1fr; gap: 18px; }
   .product-intro-showcase { height: 350px; margin-top: 10px; }
+  .infection-truth-panel { grid-template-columns: 1fr; gap: 28px; margin-top: 46px; padding: 34px 28px 36px; }
+  .infection-truth-copy .infection-truth-lead { font-size: 18px; }
+  .infection-truth-points { grid-template-columns: 1fr; gap: 18px; }
   .transparency-grid { grid-template-columns: 1fr; gap: 34px; margin-top: 34px; }
   .transparency-overview { max-width: 520px; }
   .transparency-detail-row { grid-template-columns: 1fr; gap: 7px; padding: 15px 0; }

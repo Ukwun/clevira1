@@ -118,6 +118,21 @@ export default function Home() {
         <div className="section-shell">
           <div className="transparency-heading"><div><p className="eyebrow"><span /> 04 / MEET CLEVIRA</p><h2>Meet Clevira<br /><em>Herbal Capsules.</em></h2><p className="product-intro-copy">A considered herbal capsule experience built around consistency, clear product information, and a daily routine you can understand.</p></div></div>
           <figure className="product-intro-showcase"><Image src="/images/clevira-bottle.png" alt="Clevira Herbal Capsules bottle" fill sizes="(max-width: 720px) 90vw, 620px" className="product-intro-image" /></figure>
+          <article className="infection-truth-panel">
+            <div className="infection-truth-heading">
+              <p className="eyebrow"><span /> WHAT PERSISTENT SYMPTOMS CAN MEAN</p>
+              <h3>The truth about<br /><em>chronic infection symptoms.</em></h3>
+            </div>
+            <div className="infection-truth-copy">
+              <p className="infection-truth-lead">Many infections start with signs that are easy to dismiss—a change in discharge, irritation, urinary discomfort, a recurring ache, or a skin change that keeps returning.</p>
+              <p>When symptoms are left unchecked, the underlying problem can worsen or spread. But symptoms alone cannot prove what is causing them: infections, irritation, allergies, and other health conditions can look similar. Testing and qualified medical guidance help you choose the right next step.</p>
+              <div className="infection-truth-points">
+                <div><strong>01 / Notice the pattern</strong><span>Record what changes, when it returns, and whether it is getting worse.</span></div>
+                <div><strong>02 / Get clear answers</strong><span>Ask a qualified healthcare professional whether testing is appropriate.</span></div>
+                <div><strong>03 / Follow the right plan</strong><span>Use prescribed treatments exactly as directed and verify any supplement before taking it.</span></div>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
       <section className="intro-section" id="about">
