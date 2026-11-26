@@ -44,12 +44,12 @@ export function StickyOrderButton({ href }: StickyOrderButtonProps) {
       target="_blank"
       rel="noreferrer"
       data-track="cta_buy_now"
-      aria-label="Order Clevira on WhatsApp"
+      aria-label="Order Clevira now"
       aria-hidden={!isVisible}
       tabIndex={isVisible ? 0 : -1}
     >
       <MessageCircle size={18} aria-hidden="true" />
-      <span>ORDER ON WHATSAPP</span>
+      <span>ORDER NOW</span>
       <ArrowRight size={16} aria-hidden="true" />
     </a>
   );
