@@ -41,11 +41,11 @@ export default function PrivacyPage() {
         <h2>Information used for an order</h2>
         <p>
           If you choose to continue from the order form, your name, WhatsApp
-          number, email address, delivery address, and selected package are
-          included in a prefilled WhatsApp message. The website does not receive
-          or send those details to our team. Review the message and tap Send in
-          WhatsApp if you want to submit your request. Do not include health or
-          payment-card information.
+          number, delivery address, and selected package are
+          included in a prefilled WhatsApp message. The same order details are
+          sent to Trendora&apos;s configured order inbox when the form is submitted.
+          Review the message and tap Send in WhatsApp if you want to submit your
+          request. Do not include health or payment-card information.
         </p>
 
         <h2>How your order information is handled</h2>

@@ -461,6 +461,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   .sticky-order-button { right: 14px; bottom: 17px; min-height: 46px; padding: 0 14px; font-size: 9px; }
   .hero-footnote { font-size: 9px; }
   .hero-visual { height: clamp(330px, 105vw, 400px); margin-top: 5px; margin-bottom: 12px; }
+  .hero-visual { overflow: hidden; }
+  .hero-photo-wrap { width: min(82%, 300px); height: 100%; aspect-ratio: auto; }
   .hero-botanical-one { top: 18%; right: 1%; transform: rotate(-35deg) scale(.76); }
   .hero-botanical-two { bottom: 16%; left: 1%; transform: rotate(142deg) scale(.65); }
   .scroll-cue { display: none; }

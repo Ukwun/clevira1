@@ -146,18 +146,6 @@ export function LeadForm() {
           />
         </div>
         <div className="delivery-field delivery-field-wide">
-          <label htmlFor="order-email">Email address</label>
-          <input
-            id="order-email"
-            name="email"
-            type="email"
-            autoComplete="email"
-            placeholder="you@example.com"
-            maxLength={254}
-            required
-          />
-        </div>
-        <div className="delivery-field delivery-field-wide">
           <label htmlFor="order-street">Street address</label>
           <input id="order-street" name="streetAddress" autoComplete="street-address" maxLength={250} required />
         </div>
