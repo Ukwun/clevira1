@@ -19,6 +19,15 @@ const introBackgroundImages = [
   "/images/discomfort-woman.jpg",
   "/images/discomfort-man-2.jpg",
 ];
+const healthExampleImages = [
+  { src: "/images/health-example-oral.jpg", alt: "Close-up of a tongue with a visible coating", width: 768, height: 998 },
+  { src: "/images/health-example-skin.jpg", alt: "Close-up of skin with visible spots", width: 677, height: 1200 },
+  { src: "/images/health-example-arm.jpg", alt: "Person gently holding their arm", width: 275, height: 183 },
+  { src: "/images/health-example-textured-skin.jpg", alt: "Close-up of skin with a textured appearance", width: 480, height: 359 },
+  { src: "/images/health-example-collage.png", alt: "Collage of close-up photos of skin and body areas", width: 574, height: 491 },
+  { src: "/images/health-example-discomfort.jpg", alt: "Person sitting while holding their lower back", width: 612, height: 408 },
+  { src: "/images/health-example-legs.jpeg", alt: "Close-up of legs with visible skin discoloration", width: 768, height: 960 },
+];
 export default function Home() {
   return <>
     <div className="announcement"><span className="announcement-dot" aria-hidden="true" /> When symptoms keep interrupting your life, clarity matters <a href="#about" className="announcement-link">Find a clearer next step <ArrowRight size={13} aria-hidden="true" /></a></div>
